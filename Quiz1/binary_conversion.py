@@ -1,0 +1,9 @@
+n=int(input())
+ans=0
+power=1
+while(n>0):
+    paritydigit=n%2
+    ans+=paritydigit*power
+    power*=10
+    n//=2
+print(ans)
